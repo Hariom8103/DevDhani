@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import bg from '../../assets/image/namste.png'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -10,6 +11,11 @@ const Home = () => {
           <h4 className='homeh4'>Welcome to ...</h4>
           <h2 className='homeh2'>होटल</h2>
          <h1 className='homeh1'>देव ढाणी</h1>
+         <NavLink to='menu'>
+         <button className='Exploremenu'>
+          Explore Menu
+          </button>
+          </NavLink>
         </div>
         <div className="imgcontain">
         <img width={205} src={bg} alt="" />

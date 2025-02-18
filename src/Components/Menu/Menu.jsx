@@ -51,7 +51,7 @@ const Menu = () => {
       <div className="SliderContainer">
       <Slider className='my-slider' {...settings}>
         {SliderData.map((item,i)=>
-        <Slider2  key={item.id} titel={item.titel} image={item.image}/>
+        <Slider2  i={i} titel={item.titel} image={item.image}/>
         )}
         </Slider>
       </div>

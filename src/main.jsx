@@ -6,7 +6,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Home from './Components/Home/Home.jsx'
 import Menu from './Components/Menu/Menu.jsx'
 import Review from './Components/Review/Review.jsx'
-import { Contact } from 'lucide-react'
 import ContactPage from './Components/ContactPage/ContactPage.jsx'
 
 

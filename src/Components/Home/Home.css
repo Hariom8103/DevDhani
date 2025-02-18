@@ -44,7 +44,22 @@
     font-weight: 900;
     animation: fadeInUp 1s ease-in-out;
 }
-
+.Exploremenu{
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ee8829;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    font-weight: 500;
+}
+.Exploremenu:hover{
+    background-color: #f0a330;
+    transform: scale(1.05);
+    color: wheat;
+}
 /* Main Section */
 .main {
     padding-top: 35px;
@@ -190,6 +205,9 @@
 
     .homeh1 {
         font-size: 47px;
+    }
+    .Exploremenu{
+        font-size: 14px;
     }
 
     .left h1 {

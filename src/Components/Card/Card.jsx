@@ -2,9 +2,9 @@ import React from 'react'
 import './Card.css'
 
 
-const Card = ({titel, img, price, key}) => {
+const Card = ({titel, img, price, i}) => {
   return (
-    <div key={key} className="menu-item">
+    <div key={i} className="menu-item">
         <img src={img} alt="Paneer Tikka"/>
         <div className="titelpricecontain">
             <h3 className="title">{titel}</h3>
