@@ -1,0 +1,206 @@
+/* Header Section */
+.header2 {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), 
+                url('../../assets/image/backgroundimg.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Header Text Animation */
+.homeLeft {
+    font-family: "Hind Madurai";
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Headings */
+.homeh4 {
+    font-size: 37px;
+    position: absolute;
+    top: -50px;
+    left: -200px;
+    animation: fadeInLeft 1sease-in-out;
+}
+
+.homeh2 {
+    font-size: 36px;
+    padding-right: 335px;
+    font-weight: 900;
+    color: coral;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.homeh1 {
+    color: #f94c4c;
+    font-size: 115px;
+    font-weight: 900;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Main Section */
+.main {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 130px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Left Section */
+.left {
+    padding-top: 91px;
+    margin-left: 132px;
+    color: #E0E0E0;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.firsth2 {
+    font-size: 26px;
+    font-style: italic;
+    color: #20d1d1;
+}
+
+.left h1 {
+    font-size: 90px;
+    color: #666666;
+}
+
+.ex {
+    color: black;
+}
+
+/* Right Section (Circular Image) */
+.right {
+    height: 400px;
+    width: 400px;
+    background-image: url(/src/assets/image/Dalbati.jpg);
+    position: absolute;
+    right: 124px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.right:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 166, 0, 0.3);
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .homeh4 {
+        font-size: 28px;
+        top: 30px;
+        left: 50px;
+    }
+
+    .homeh2 {
+        font-size: 30px;
+        padding-right: 0;
+    }
+
+    .homeh1 {
+        font-size: 80px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+
+    .left h1 {
+        font-size: 60px;
+    }
+
+    .right {
+        position: relative;
+        right: 0;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header2 {
+        height: 300px;
+    }
+
+    .homeh4 {
+        font-size: 22px;
+        top: -37px;
+        left: 20px;
+    }
+
+    .homeh2 {
+        font-size: 24px;
+    }
+
+    .homeh1 {
+        font-size: 47px;
+    }
+
+    .left h1 {
+        font-size: 50px;
+    }
+
+    .right {
+        height: 300px;
+        width: 300px;
+    }
+    .imgcontain img{
+        width: 170px;
+    }
+}

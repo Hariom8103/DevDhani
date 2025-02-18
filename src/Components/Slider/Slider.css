@@ -1,0 +1,27 @@
+.slidercard{
+    overflow: hidden;
+    text-align: center;
+    width: 126px;
+    margin-left: 30px;
+}
+.slidercard h2{
+    font-size: 14px;
+    color: #363535bd;
+}
+.sliderimg{
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 2px;
+    width: 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderimg img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 126px;
+    width: 126px;
+
+}

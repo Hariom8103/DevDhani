@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Header */
+.header {
+    width: 100%;
+    padding: 16px 20px;
+    height: 80px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 8px 0px rgb(59, 58, 58);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.devimg {
+    width: 120px;
+    position: relative;
+    left: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.divdf{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* .ulLink{
+    display: none;
+} */
+.navlink {
+    text-decoration: none;
+    color: #ff8f00;
+    font-weight: 800;
+    transition: color 0.3s ease-in-out;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+    color: #d97706;
+}
+
+/* Inactive Links */
+.inactive {
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.inactive:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Icons */
+.logcontainer  {
+    display: none;
+    font-size: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.logcontainer:hover {
+    color: #d97706;
+}
+.clickdiv{
+    width: 100px;
+    height: 60px;
+    background-color: rgb(253, 253, 253);
+    position: absolute;
+    top: 100%;
+    right: -100px;
+    transition: right 0.3s ease-in-out;
+   
+}
+.clickdivShow{
+    right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        height: 70px;
+        padding: 12px 15px;
+        overflow-x: clip;
+    }
+
+    .devimg {
+        width: 100px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        padding-right: 23px;
+    }
+
+    .navlink {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .logcontainer{
+        display: block;
+    }
+    /* .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 61px;
+        right:-100% ;
+        width: 15%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        text-align: center;
+        transition: right 0.4s ease-in-out;
+    }
+    .nav-link{
+        right: 0;
+    } */
+    .divdf{
+        padding-left: 10px;
+    }
+    .toggle{
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navlink {
+        display: block;
+    }
+
+    /* Hamburger Menu */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 60px;
+        padding: 10px;
+    }
+
+    .devimg {
+        width: 80px;
+    }
+
+    .logcontainer i {
+        font-size: 22px;
+    }
+}
